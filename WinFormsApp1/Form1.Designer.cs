@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            listBoxStudents = new ListBox();
             AddStudent = new Button();
             SuspendLayout();
             // 
-            // listBox1
+            // listBoxStudents
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(0, 1);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(594, 454);
-            listBox1.TabIndex = 0;
+            listBoxStudents.FormattingEnabled = true;
+            listBoxStudents.ItemHeight = 15;
+            listBoxStudents.Location = new Point(0, 1);
+            listBoxStudents.Name = "listBoxStudents";
+            listBoxStudents.Size = new Size(594, 454);
+            listBoxStudents.TabIndex = 0;
             // 
             // AddStudent
             // 
@@ -49,6 +49,7 @@
             AddStudent.TabIndex = 1;
             AddStudent.Text = "Добавить ученика";
             AddStudent.UseVisualStyleBackColor = true;
+            AddStudent.Click += AddStudent_Click;
             // 
             // FormAcademicPerformance
             // 
@@ -56,15 +57,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(AddStudent);
-            Controls.Add(listBox1);
+            Controls.Add(listBoxStudents);
             Name = "FormAcademicPerformance";
             Text = "Таблица успеваемости учеников";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ListBox listBox1;
         private Button AddStudent;
+        public ListBox listBoxStudents;
     }
 }
