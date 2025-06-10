@@ -16,12 +16,15 @@ using System.Windows.Forms;
 namespace WinFormsApp1
 {
     public class ClassStudent
-    {       
-        public static List<string> Students = new List<string>();
-        public FormAcademicPerformance form = new FormAcademicPerformance();
-        public static void AddToListBox()
+    {
+        public string Name { get; set; }
+        public string Subject { get; set; }
+        public string Grade { get; set; }
+        public ClassStudent(string Name, string Subject, string Grade)
         {
-            foe
+            this.Name = Name;
+            this.Subject = Subject;
+            this.Grade = Grade;
         }
     }
 }

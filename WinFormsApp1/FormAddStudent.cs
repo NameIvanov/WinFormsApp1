@@ -19,7 +19,8 @@ namespace WinFormsApp1
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            ClassStudent.Students.Add($"{textBoxName.Text} {listBoxSubject.SelectedItems} {textBoxGrade.Text} ");
+            ClassStudent stud = new ClassStudent(textBoxName.Text, listBoxSubject.SelectedItem.ToString(), textBoxGrade.Text);
+            FormAcademicPerformance.Students.Add(stud);
             this.Close();
         }
     }

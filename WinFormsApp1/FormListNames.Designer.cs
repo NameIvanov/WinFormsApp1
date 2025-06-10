@@ -65,6 +65,6 @@
 
         #endregion
         private Button AddStudent;
-        public ListBox listBoxStudents;
+        internal ListBox listBoxStudents;
     }
 }

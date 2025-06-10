@@ -91,7 +91,7 @@
             // buttonAdd
             // 
             buttonAdd.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            buttonAdd.Location = new Point(188, 284);
+            buttonAdd.Location = new Point(188, 240);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(224, 58);
             buttonAdd.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(616, 411);
+            ClientSize = new Size(607, 380);
             Controls.Add(buttonAdd);
             Controls.Add(labelGrade);
             Controls.Add(textBoxGrade);
